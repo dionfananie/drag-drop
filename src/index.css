@@ -1,0 +1,65 @@
+body {
+  background:#ececec;
+  color:white;
+}
+
+:root{
+  --tile: 120px;
+}
+.wrapper{
+  margin: 16px;
+  position: relative;
+}
+.wrapper-in{
+ position: relative;
+    display: block;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+
+}
+.wrapper-transform{
+  width: calc(100% - 250px);
+}
+
+.board div {
+  position:relative;
+  height: var(--tile);
+  width: var(--tile);
+  border: 1px dashed gray;
+  display: inline-block;
+  margin: 0;
+}
+
+.board {
+  width: 1080px;
+  height: 960px;
+  display: grid;
+  grid-template-columns: repeat(9, var(--tile));
+  grid-template-rows: repeat(8,var(--tile));
+  background:rgb(219, 219, 219);
+  border:5px solid black;
+  margin:auto;
+}
+
+
+#drag4,
+#drag5,
+#drag6,
+#drag7,
+#drag8,
+#drag9,
+#drag10,
+#drag11,
+#drag12 {
+  height: var(--tile);
+  width: var(--tile);
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.tile-item{
+  background-color: red;
+}
+ 
