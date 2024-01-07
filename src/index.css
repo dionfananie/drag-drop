@@ -22,25 +22,7 @@ body {
   width: calc(100% - 250px);
 }
 
-.board div {
-  position:relative;
-  height: var(--tile);
-  width: var(--tile);
-  border: 1px dashed gray;
-  display: inline-block;
-  margin: 0;
-}
 
-.board {
-  width: 1080px;
-  height: 960px;
-  display: grid;
-  grid-template-columns: repeat(9, var(--tile));
-  grid-template-rows: repeat(8,var(--tile));
-  background:rgb(219, 219, 219);
-  border:5px solid black;
-  margin:auto;
-}
 
 
 #drag4,
@@ -60,6 +42,27 @@ body {
 }
 
 .tile-item{
-  background-color: red;
+  width: 120px;
+  height: 120px;
+  background-color: rebeccapurple;
+  pointer-events: none;
+ 
 }
  
+.tile-item img{
+  width: var(--tile);
+  height: var(--tile);
+}
+
+.wrapper-tiles{
+  position: absolute;
+  cursor: grab;
+}
+
+.board-tiles{
+ 
+}
+.board-tiles:hover{
+  background-color: rgba(248, 0, 0, 0.3);
+
+}
