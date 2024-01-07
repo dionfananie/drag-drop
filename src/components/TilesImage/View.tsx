@@ -1,6 +1,7 @@
 import { DragEvent, useState } from "react";
 import { RotateCw, RotateCcw } from "react-feather";
 import * as css from "./View.styles";
+
 const TilesImage = ({ item, id }: { item: { img: string }; id: number }) => {
   const rotation = [0, 90, 180, 270];
   const [isDisplay, setIsDisplay] = useState(false);
