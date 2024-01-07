@@ -13,6 +13,8 @@ export const tileControl = css`
   align-items: center;
   justify-content: center;
   gap: 8px;
+  cursor: pointer;
+  z-index: 1;
 `;
 
 export const wrapperTiles = css`
@@ -26,4 +28,8 @@ export const tileItem = css`
   pointer-events: none;
   width: ${tile};
   height: ${tile};
+`;
+
+export const degreeItem = (degree: number) => css`
+  rotate: ${degree}deg;
 `;

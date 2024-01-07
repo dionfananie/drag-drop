@@ -12,3 +12,11 @@ export const board = css`
   border: 5px solid black;
   margin: auto;
 `;
+
+export const wrapperStack = css`
+  position: relative;
+  display: block;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+`;

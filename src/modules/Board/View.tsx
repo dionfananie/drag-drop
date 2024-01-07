@@ -3,13 +3,18 @@ import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import * as css from "./View.styles";
 import Tiles from "../../components/Tiles";
 import TilesImage from "../../components/TilesImage";
+import { TILES } from "../../constants/tiles";
 
 const Board = () => {
   const arrBoard = new Array(72).fill(Math.random());
   return (
     <div className="wrapper">
-      <div className="wrapper-in">
-        <TilesImage />
+      <div css={css.wrapperStack}>
+        <div id="images">
+          {TILES.map((item, idx) => {
+            return <TilesImage item={item} key={`tiles-image-${idx}`} id={idx} />;
+          })}
+        </div>
       </div>
 
       <div className="wrapper-transform">
