@@ -40,29 +40,3 @@ body {
   top:0;
   left:0;
 }
-
-.tile-item{
-  width: 120px;
-  height: 120px;
-  background-color: rebeccapurple;
-  pointer-events: none;
- 
-}
- 
-.tile-item img{
-  width: var(--tile);
-  height: var(--tile);
-}
-
-.wrapper-tiles{
-  position: absolute;
-  cursor: grab;
-}
-
-.board-tiles{
- 
-}
-.board-tiles:hover{
-  background-color: rgba(248, 0, 0, 0.3);
-
-}

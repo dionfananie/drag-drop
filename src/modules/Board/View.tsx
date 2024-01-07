@@ -1,27 +1,15 @@
-import React, { DragEvent } from "react";
+import React from "react";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
-import { TILES } from "../../constants/tiles";
 import * as css from "./View.styles";
 import Tiles from "../../components/Tiles";
+import TilesImage from "../../components/TilesImage";
 
 const Board = () => {
-  function drag(ev: DragEvent<HTMLDivElement>) {
-    ev.dataTransfer.setData("text", (ev.target as HTMLDivElement).id);
-  }
-
   const arrBoard = new Array(72).fill(Math.random());
   return (
     <div className="wrapper">
       <div className="wrapper-in">
-        <div id="images">
-          {TILES.map((item, idx) => {
-            return (
-              <div key={`tile-${idx + 1}`} id={`drag${idx + 1}`} className="wrapper-tiles" onDragStart={drag} draggable>
-                <img className="tile-item" src={item.img} alt={`tile-${idx + 1}`} />
-              </div>
-            );
-          })}
-        </div>
+        <TilesImage />
       </div>
 
       <div className="wrapper-transform">
