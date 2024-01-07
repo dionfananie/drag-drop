@@ -3,6 +3,7 @@ import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import { TILES } from "../../constants/tiles";
 import * as css from "./View.styles";
 import Tiles from "../../components/Tiles";
+
 const Board = () => {
   function drag(ev: DragEvent<HTMLDivElement>) {
     ev.dataTransfer.setData("text", (ev.target as HTMLDivElement).id);
@@ -49,11 +50,6 @@ const Board = () => {
           )}
         </TransformWrapper>
       </div>
-      {/* <div className="board" id="text">
-        {arrBoard.map((_, idx) => {
-          return <div key={`tiles-${idx}`} id={`div${idx + 1}`} onDrop={drop} onDragOver={allowDrop}></div>;
-        })}
-      </div> */}
     </div>
   );
 };

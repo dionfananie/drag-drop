@@ -14,6 +14,9 @@ export const boardItemTiles = css`
     width: ${tile};
   }
   &:hover {
-    background-color: rgba(248, 0, 0, 0.3);
   }
+`;
+
+export const hovered = css`
+  background-color: rgb(35 203 35 / 30%);
 `;
