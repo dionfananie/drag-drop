@@ -6,7 +6,7 @@ export const boardItemTiles = css`
   position: relative;
   height: ${tile};
   width: ${tile};
-  border: 1px dashed gray;
+  border: 1px dashed rgb(128 128 128 / 8%);
   display: inline-block;
   margin: 0;
   img {
@@ -21,7 +21,7 @@ export const tileControl = css`
   position: absolute;
   height: 100%;
   width: 100%;
-  border: 1px dashed gray;
+  border: 1px dashed rgb(128 128 128 / 8%);
   display: inline-block;
   background-color: rgb(0 0 0 / 30%);
   display: flex;

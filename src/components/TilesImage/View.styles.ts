@@ -6,7 +6,7 @@ export const tileControl = css`
   position: absolute;
   height: 100%;
   width: 100%;
-  border: 1px dashed gray;
+  /* border: 1px dashed gray; */
   display: inline-block;
   background-color: rgb(0 0 0 / 30%);
   display: flex;
@@ -20,6 +20,8 @@ export const tileControl = css`
 export const wrapperTiles = css`
   position: absolute;
   cursor: grab;
+  width: 100%;
+  height: 100%;
 `;
 export const tileItem = css`
   width: 120px;
